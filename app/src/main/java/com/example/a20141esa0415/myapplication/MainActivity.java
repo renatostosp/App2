@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     public void bottomClick(View v){
         Toast.makeText(this, "Bottom button clicked",
                 Toast.LENGTH_SHORT).show();
-        Log.i("info","The user clicked the bottom button");
+        Log.i("info","The user licked the bottom button");
     }
 
     public void topClick2(View v){
