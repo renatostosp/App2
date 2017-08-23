@@ -8,12 +8,11 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    //EditText editText = (EditText) findViewById(R.id.editText);
+    EditText editText;
+    String emailUsuario;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // variaveis locais ao metodo e somente podem ser visualizadas aqui
-        //String emailUsuario;
-        //emailUsuario = String.valueOf(editText.getText());
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -29,4 +28,11 @@ public class MainActivity extends AppCompatActivity {
         Log.i("info","The user clicked the bottom button");
     }
 
+    public void topClick2(View v){
+        editText = (EditText) findViewById(R.id.editText);
+        emailUsuario = String.valueOf(editText.getText());
+        Toast.makeText(this, "E-mail verified",
+                Toast.LENGTH_SHORT).show();
+        Log.i("info","The user verified e-mail" + emailUsuario);
+    }
 }
