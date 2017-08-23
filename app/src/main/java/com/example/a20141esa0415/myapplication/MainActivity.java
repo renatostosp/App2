@@ -8,12 +8,12 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    EditText editText = (EditText) findViewById(R.id.editText);
+    //EditText editText = (EditText) findViewById(R.id.editText);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // variaveis locais ao metodo e somente podem ser visualizadas aqui
-        String emailUsuario;
-        emailUsuario = String.valueOf(editText.getText());
+        //String emailUsuario;
+        //emailUsuario = String.valueOf(editText.getText());
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
